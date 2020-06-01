@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 
 import { getSmurfs, addSmurf } from '../actions/action';
+import {Carousel} from 'react-bootstrap';
 
 import SmurfForm from './SmurfForm';
 
@@ -12,7 +13,7 @@ useEffect(() => {
   initialSmurfs()
 }, [initialSmurfs])
 
-
+//this is the
 return (
       <div>
              <div className = "smurfList">

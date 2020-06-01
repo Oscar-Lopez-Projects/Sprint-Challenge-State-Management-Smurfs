@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import {Button} from 'react-bootstrap';
 const SmurfForm = (props) => {
     const [newSmurf, setNewSmurf] = useState({
         name: '',
@@ -25,7 +25,7 @@ const SmurfForm = (props) => {
     };
 
     return (
-        <div>
+        <div className="form">
             <form onSubmit={handleSubmit}>
                 <div>
                     <input
@@ -54,7 +54,7 @@ const SmurfForm = (props) => {
                         value={newSmurf.height}
                     />
                 </div>
-                <button className = "submitButton" type="submit">Create Smurf</button>
+                <Button className = "submitButton" type="submit">Create Smurf</Button>
 
             </form>
         </div>
